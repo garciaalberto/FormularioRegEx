@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div id="formulario">
+        <div id="nombre">
+            Nombre:
+            <input type="text" id="name">
+        </div>
+
+        <div id="apellidos">
+            Apellido/s:
+            <input type="text" id="surname">
+        </div>
+        <div id="correo">
+            Correo electrónico:
+            <input type="text" id="mail" pattern="^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$">
+        </div>
+        <div id="telefono">
+            Telefono fijo:
+            <input type="text" id="telefon" pattern="\b[98][1-8]\d{7}\b">
+        </div>
+        <div id="cp">
+            Código postal:
+            <input type="text" id="postalcode" pattern="^(5[0-2]|[0-4][0-9])[0-9]{3}$">
+        </div>
+        <div id="fecha">
+            Fecha de nacimiento en formato dd/mm/aaaa:
+            <input pattern="^(0?[1-9]|[12][0-9]|3[01])[\/](0?[1-9]|1[012])[/\\/](19|20)\d{2}$" id="fechanacimiento" type="text">
+        </div>
+        <div id="direccion">
+            Dirección:
+            <input id="adress" pattern="(([X-Z]{1})([-]?)(\d{7})([-]?)([A-Z]{1}))|((\d{8})([-]?)([A-Z]{1}))" type="text">
+        </div>
+        <div id="dninie">
+            DNI/NIE:
+            <input id="dni" pattern="(([X-Z]{1})([-]?)(\d{7})([-]?)([A-Z]{1}))|((\d{8})([-]?)([A-Z]{1}))" type="text">
+        </div>
+    </div>
+</body>
+
+</html>
